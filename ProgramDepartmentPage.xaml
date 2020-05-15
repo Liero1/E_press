@@ -1,0 +1,33 @@
+﻿<Page x:Class="Wydawnictwo_ePress.ProgramDepartmentPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Wydawnictwo_ePress"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+      Title="Program Department"  Height="500" Width="500">
+
+    <Grid>
+
+
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black" Offset="1"/>
+                <GradientStop Color="#FF5DB022" Offset="0.223"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Margin="148,0,0,350.4" TextWrapping="Wrap" Text="Program Department" FontFamily="Comic Sans MS" FontSize="20" Height="40" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="197"/>
+        <Button Content="Add New Contract" Margin="135,139,0,0"  HorizontalAlignment="Left" Width="224" Height="19" VerticalAlignment="Top" Click="Button_Click_Add_New_Contract"/>
+        <Button Content="Contracts" HorizontalAlignment="Left" Margin="135,163,0,0" VerticalAlignment="Top" Width="224" Click="Button_Click_Show_Contract"/>
+        <Button Content="Save Contracts" HorizontalAlignment="Left" Margin="135,187,0,0" VerticalAlignment="Top" Width="224" Click="Button_Click_Save_Contracts"/>
+        
+        <Button Content="Delete All Contracts" HorizontalAlignment="Left" Margin="135,212,0,0" VerticalAlignment="Top" Width="224" Click="Button_Click_Delete_All_Contracts"/>
+        <Button Content="Back to Menu" HorizontalAlignment="Left" Margin="148,312,0,0" VerticalAlignment="Top" Width="200" Height="35" Click="Button_ClickBack"/>
+        <Button Content="Go Printing Department" HorizontalAlignment="Left" Margin="135,237,0,0" VerticalAlignment="Top" Width="224" Click="Go_to_printing_department_click"/>
+
+    </Grid>
+</Page>

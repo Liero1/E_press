@@ -1,0 +1,27 @@
+﻿<Page x:Class="Wydawnictwo_ePress.MainPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Wydawnictwo_ePress"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+     Title="Wydawnictwo ePress" Height="500" Width="500">
+
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black" Offset="1"/>
+                <GradientStop Color="#FF5DB022" Offset="0.223"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+
+
+        <StackPanel>
+            <TextBlock Margin="56,45,55,0" TextWrapping="Wrap" Text="Welcome in e-Press Publishing house" RenderTransformOrigin="0.483,2.514" Height="40" FontFamily="Comic Sans MS" VerticalAlignment="Top" FontSize="20" TextDecorations="{x:Null}" OpacityMask="#FF170AD9" Cursor="No" Foreground="Black" Background="#FF5DB022"/>
+            <Button Content="Program Depatrment" Margin="140,22,160,27" RenderTransformOrigin="0.514,-0.033" Cursor="Arrow" ToolTip="Go to Program Department" Click="Button_Click_1" Background="#FFDDDDDD" Grid.Row="1" Height="55"/>
+            <Button x:Name="Sales_Department_Button"  Content="Sales Depatrment" Margin="140,9,160,40" Grid.Row="2" Cursor="Arrow" ToolTip="Go to Sales Department" Click="Button_Click_2" Height="55"/>
+            <Button Content="Exit" Margin="140,24.4,160,24.4" Cursor="Arrow" ToolTip="Exit the program" Click="Button_Click" Height="46" />
+        </StackPanel>
+    </Grid>
+</Page>
